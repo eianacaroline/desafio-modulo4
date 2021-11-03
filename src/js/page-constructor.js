@@ -159,7 +159,7 @@ export const errorMessage = (erro) => {
     errorStatus.classList.add('error-status');
     errorPhrase2.classList.add('error-message');
     errorPhrase.append(`Oops, algo deu errado na sua busca`);
-    errorStatus.append(`status 500: ${erro}`);
+    errorStatus.append(`status: ${erro.status}`);
     errorPhrase2.append(`Por favor, tente novamente.`);
     errorMessage.append(errorPhrase, errorStatus, errorPhrase2);
 }

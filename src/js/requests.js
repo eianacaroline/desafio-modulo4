@@ -7,7 +7,7 @@ export const fetchCity = async(state, city) => {
         cardCostructor(data);
         totalConstructor(data);
         cityConstructor(data);
-    } catch (e) { errorMessage(e.name) }
+    } catch (e) { errorMessage(response) }
 }
 
 export default fetchCity;
