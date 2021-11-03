@@ -53,7 +53,6 @@ const cardAddress = (value) => {
     const cardAddress = document.createElement('p');
     cardAddress.classList.add('address');
     cardAddress.innerText = `${value.listing.address.street}, ${value.listing.address.streetNumber} - ${value.listing.address.neighborhood}, ${value.listing.address.city} - ${value.listing.address.stateAcronym}`;
-    cardAddress.classList.add('address');
     return cardAddress;
 }
 
