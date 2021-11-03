@@ -3,7 +3,6 @@ import { cityState } from "./data.js";
 
 const search = () => {
     const inputSearch = document.querySelector('.input-search');
-
     inputSearch.addEventListener('blur', event => {
         event.preventDefault();
         const inputValue = inputSearch.value.trim().toLowerCase().replaceAll(' ', '-').replace(/Ã|ã/g, 'a');

@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="icon" type="image/x-icon" href="./src/img/icon.png">
-
     <title>Clone | Viva Real</title>
 </head>
 <body>
@@ -54,86 +50,84 @@
             </span>
         </div>
     </nav>
-
-      <main class="container content">
-          <div class="row">
-          <aside class="col-3 colunm-one">
-            <div class="filter-bar">
-                <div class="search-form">
-                    <form>
-                        <div class="mb-3">
-                            <label class="titles-aside">LOCALIZAÇÃO DO IMÓVEL</label>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control input-search" placeholder="Digite uma cidade" aria-label="Username" aria-describedby="basic-addon1">
+    <main class="container content">
+        <div class="row">
+            <aside class="col-3 colunm-one">
+                <div class="filter-bar">
+                    <div class="search-form">
+                        <form>
+                            <div class="mb-3">
+                                <label class="titles-aside">LOCALIZAÇÃO DO IMÓVEL</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control input-search" placeholder="Digite uma cidade" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <p id="city" class="text-aside"> </p>
                             </div>
-                            <p id="city" class="text-aside"> </p>
+                        </form>
+                    </div>
+                    <div class="aside-fields">
+                        <h4 class="titles-aside">IMÓVEL COM</h4>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label text-aside" for="flexSwitchCheckDefault">Tour Virtual ou Vídeos</label>
                         </div>
-                    </form>
+                        <h4 class="titles-aside">TIPO DE IMÓVEL</h4>
+                            <div class="dropdown d-grid gap-2">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mostrar todos
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Apartamento</a></li>
+                                <li><a class="dropdown-item" href="#">Casa</a></li>
+                                <li><a class="dropdown-item" href="#">Chácara</a></li>
+                                </ul>
+                            </div>
+                        <div class="price-div">
+                            <div>
+                                <h4 class="titles-aside">PREÇO MÍNIMO</h4>
+                                <input type="text" class="form-control price-input" placeholder="R$">
+                            </div>
+                            <div>
+                                <h4 class="titles-aside">PREÇO MÁXIMO</h4>
+                                <input type="text" class="form-control price-input" placeholder="R$">
+                            </div>
+                        </div>
+                        <h4 class="titles-aside">NÚMERO DE QUARTOS</h4>
+                        <div class="div-radio">
+                            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                            <label class="btn btn-light btn-radio" for="option1">1+</label>
+
+                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                            <label class="btn btn-light btn-radio" for="option2">2+</label>
+
+                            <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                            <label class="btn btn-light btn-radio" for="option4">3+</label>
+
+                            <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                            <label class="btn btn-light btn-radio" for="option4">4+</label>
+
+                            <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                            <label class="btn btn-light btn-radio" for="option4">5+</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="aside-fields">
-                    <h4 class="titles-aside">IMÓVEL COM</h4>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                        <label class="form-check-label text-aside" for="flexSwitchCheckDefault">Tour Virtual ou Vídeos</label>
-                    </div>
-                    <h4 class="titles-aside">TIPO DE IMÓVEL</h4>
-                        <div class="dropdown d-grid gap-2">
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Mostrar todos
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Apartamento</a></li>
-                            <li><a class="dropdown-item" href="#">Casa</a></li>
-                            <li><a class="dropdown-item" href="#">Chácara</a></li>
-                            </ul>
-                        </div>
-                    <div class="price-div">
-                        <div>
-                            <h4 class="titles-aside">PREÇO MÍNIMO</h4>
-                            <input type="text" class="form-control price-input" placeholder="R$">
-                        </div>
-                        <div>
-                            <h4 class="titles-aside">PREÇO MÁXIMO</h4>
-                            <input type="text" class="form-control price-input" placeholder="R$">
-                        </div>
-                    </div>
-                    <h4 class="titles-aside">NÚMERO DE QUARTOS</h4>
-                    <div class="div-radio">
-                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                        <label class="btn btn-light btn-radio" for="option1">1+</label>
-
-                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                        <label class="btn btn-light btn-radio" for="option2">2+</label>
-
-                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-                        <label class="btn btn-light btn-radio" for="option4">3+</label>
-
-                        <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-                        <label class="btn btn-light btn-radio" for="option4">4+</label>
-
-                        <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
-                        <label class="btn btn-light btn-radio" for="option4">5+</label>
-                    </div>
-                </div>
-            </div>
-          </aside>
-        
-          <section class="col-9 colunm-two">
-            <nav class="nav nav-main">
-                <a class="nav-link nav-link-main active" href="#">COMPRAR</a>
-                <a class="nav-link nav-link-main" href="#">ALUGAR</a>
-                <a class="nav-link nav-link-main" href="#">IMÓVEIS NOVOS</a>
-                <a class="nav-link nav-link-main" href="#">SELEÇÃO VIVA REAL</a>
-              </nav>
-              <h3 class="total"></h3>
-              <button class="city"></button>
-              <div class="results-list"></div>
-          </section>
+            </aside>
+            <section class="col-9 colunm-two">
+                <nav class="nav nav-main">
+                    <a class="nav-link nav-link-main active" href="#">COMPRAR</a>
+                    <a class="nav-link nav-link-main" href="#">ALUGAR</a>
+                    <a class="nav-link nav-link-main" href="#">IMÓVEIS NOVOS</a>
+                    <a class="nav-link nav-link-main" href="#">SELEÇÃO VIVA REAL</a>
+                </nav>
+                <h3 class="total"></h3>
+                <h2 class="error-message"></h2>
+                <button class="city"></button>
+                <div class="results-list"></div>
+            </section>
         </div>
-      </main>
-
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="index.js" type="module"></script>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./src/js/index.js" type="module"></script>
 </body>
 </html>

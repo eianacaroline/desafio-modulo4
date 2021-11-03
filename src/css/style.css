@@ -102,7 +102,8 @@
 .results-list {
     margin-top: -2vw;
 }
-/* NAV */
+
+/* NAV MAIN*/
 .nav-main {
     border-bottom: 1px solid rgba(204, 194, 194, 0.322);
 }
@@ -136,6 +137,7 @@
     font-weight: bold;
 }
 
+/* RESET BUTTON */
 .button-reset {
     background: none;
     border: none;
@@ -173,7 +175,6 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
 }
 
-
 .card-image {
     margin-left: -2vw;
     width: 25vw;
@@ -186,6 +187,7 @@
     margin-bottom: 1vw;
 }
 
+/* CARDS INFOS */
 .card-content {
     display: flex;
     flex-direction: column;
@@ -225,5 +227,15 @@
 
 .condominio-value {
     font-weight: bold;
+}
+
+/* ERROR */
+.erro {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.error-status {
+    color: red;
 }
 
